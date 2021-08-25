@@ -1,0 +1,2 @@
+# basicProgrammingPlatzi
+Review exercises
