@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alicia</title>
+    <style>
+        a:link {
+            color: hotpink;
+        }
+
+        a:visited {
+            color: tomato;
+        }
+
+        a:hover {
+            color: palegoldenrod;
+        }
+
+        p:not(.maravillas) {
+            color: lightsalmon;
+        }
+
+        .container div:nth-child(1) {
+            color: lightseagreen;
+        }
+
+        div::before {
+            content: ":)";
+        }
+
+        div::after {
+            content: "***";
+        }
+
+        a {
+            background-color: powderblue;
+            transition: background-color 0.5s;
+        }
+
+        a:hover {
+            background-color: gold;
+        }
+
+        input:focus {
+        color: rgb(47, 0, 255);
+      }
+      .red-input:focus {
+  background: yellow;
+  color: red;
+}
+
+.blue-input:focus {
+  background: yellow;
+  color: blue;
+}
+      
+    </style>
+</head>
+
+<body>
+    <a href="/">Alicia</a>
+    <p>en el</p>
+    <p class="maravillas">país</p>
+    <div class="container">
+        <div>de</div>
+        <div>las</div>
+        <div>maravillas</div>
+    </div>
+    <a href="#">Intenta pasar el mouse sobre este enlace.</a>
+
+    <input type="text">
+    <input class="red-input" value="Voy a ser de color rojo cuando enfoque."><br>
+<input class="blue-input" value="Voy a ser de color azul cuando enfoque.">
+</body>
+
+</html>

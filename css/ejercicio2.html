@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <style>
+        .shadow {
+            background: lightgrey;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .circle1 {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: #FF512F;
+            background: -webkit-linear-gradient(to right, #F09819, #FF512F);
+            background: linear-gradient(to right, #F09819, #FF512F);          
+        }
+
+        .circle1:hover{
+            transform: translate(20px, -20px);
+        }
+
+        .circle2 {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: #FF512F;
+            background: -webkit-linear-gradient(to right, #F09819, #FF512F);
+            background: linear-gradient(to right, #F09819, #a85140);          
+        }
+
+        .circle2:hover{
+            transform: translate(-20px);
+        }
+
+        .circle3 {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: #d6b6b0;
+            background: -webkit-linear-gradient(to right, #F09819, #FF512F);
+            background: linear-gradient(to right, #19f059, #a85140);          
+        }
+
+        .circle3:hover{
+            transform: translate(50%, 50%);
+        }
+
+        .shadow1{
+      background: lightblue;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+
+    .circle4 {
+      background-color: #85FFBD;
+      background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+      width: 100px;
+      border-radius: 50%;
+      height: 100px;
+      transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    .circle4:hover {
+      transform: translate(-20px, 20px);
+      transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+  
+        
+    </style>
+</head>
+
+<body>
+    <div class="shadow">
+        <div class="circle1"></div>
+    </div>
+    <br>
+    <div class="shadow">
+        <div class="circle2"></div>
+    </div>
+    <br>
+    <div class="shadow">
+        <div class="circle3"></div>
+    </div>
+
+    <br>
+    <div class="shadow1">
+        <div class="circle4"></div>
+    </div>
+</body>
+
+</html>
