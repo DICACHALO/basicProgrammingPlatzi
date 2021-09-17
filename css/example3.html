@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform-scale</title>
+    <style>
+        .circle{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: lightcoral;
+        }
+        .circle:hover{
+            transform: scale(1.2);
+        }
+        .circle1{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: rgb(240, 210, 128);
+        }
+        .circle1:hover{
+            transform: scale(0.8);
+        }
+        .circle2{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: rgb(147, 240, 128);
+        }
+        .circle2:hover{
+            transform: scaleX(0.8);
+        }
+        .circle3{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: rgb(128, 240, 225);
+        }
+        .circle3:hover{
+            transform: scale(0.8, 1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="circle" ></div><br>
+    <div class="circle1"></div><br>
+    <div class="circle2" ></div><br>
+    <div class="circle3" ></div><br>
+</body>
+</html>
