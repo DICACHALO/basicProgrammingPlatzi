@@ -1,58 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transform</title>
     <style>
-.first{
-    background: lightsalmon;
-    border-radius: 20%;
-    width: 150px;
-    height: 150px;
-}
+        .first {
+            background: lightsalmon;
+            border-radius: 20%;
+            width: 150px;
+            height: 150px;
+        }
 
-.first:hover{
-    transform: skew(20deg);
-}
+        .first:hover {
+            transform: skew(20deg);
+        }
 
-.second{
-    background: rgb(255, 253, 122);
-    border-radius: 20%;
-    width: 150px;
-    height: 150px;
-}
+        .second {
+            background: rgb(255, 253, 122);
+            border-radius: 20%;
+            width: 150px;
+            height: 150px;
+        }
 
-.second:hover{
-    transform: skewY(20deg);
-}
+        .second:hover {
+            transform: skewY(20deg);
+        }
 
-.third{
-    background: rgb(160, 255, 122);
-    width: 250px;
-    height: 50px;
-}
+        .third {
+            background: rgb(160, 255, 122);
+            width: 250px;
+            height: 50px;
+        }
 
-.third:hover{
-    transform: rotate(20deg);
-}
+        .third:hover {
+            transform: rotate(20deg);
+        }
 
-.fourth{
-    background: rgb(122, 255, 255);
-    width: 250px;
-    height: 50px;
-}
+        .fourth {
+            background: rgb(122, 255, 255);
+            width: 250px;
+            height: 50px;
+        }
 
-.fourth:hover{
-    transform: rotateY(70deg);
-}
+        .fourth:hover {
+            transform: rotateY(70deg);
+        }
+
+        .fifth {
+            background: rgb(122, 146, 255);
+            width: 150px;
+            height: 50px;
+            transform-origin: left top;
+        }
+
+        .fifth:hover {
+            transform: rotate(10deg);
+        }
+
+        body {
+            box-sizing: border-box;
+        }
+
+        .container,
+        .container__circle {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+
+        }
+
+        .container {
+            position: relative;
+            margin: 25vh auto;
+            background: #f1f1f1;
+
+        }
+
+        .container__circle {
+            position: absolute;
+            margin: 0 auto;
+            transition: transform .8s linear;
+        }
+
+        .container__circle:nth-child(1) {
+            z-index: 3;
+            background: linear-gradient(to right, #ffa17f, #567691);
+        }
+
+        .container__circle:nth-child(2) {
+            z-index: 2;
+            background: linear-gradient(to right, #3494e6, #ec6ead);
+        }
+
+        .container__circle:nth-child(3) {
+            z-index: 1;
+            background: linear-gradient(to right, #ee0979, #ff6a00);
+        }
+
+        .container__circle:nth-child(1):hover {
+            transform: rotate(90deg) translate(30px, -20px);
+        }
+
+        .container__circle:nth-child(1):hover~.container__circle:nth-child(2) {
+            transform: rotate(180deg) translate(40px, 40px);
+        }
+
+        .container__circle:nth-child(1):hover~.container__circle:nth-child(3) {
+            transform: rotate(180deg) translate(40px, -60px);
+        }
     </style>
 </head>
+
 <body>
     <div class="first"></div><br>
     <div class="second"></div><br>
     <div class="third"></div><br>
     <div class="fourth"></div><br>
+    <div class="fifth"></div><br>
+
+    <div class="container">
+        <div class="container__circle"></div>
+        <div class="container__circle"></div>
+        <div class="container__circle"></div>
+    </div>
 </body>
+
 </html>
