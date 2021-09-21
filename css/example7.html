@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+div#div1 {
+  -webkit-backface-visibility: visible;  /* Chrome, Safari, Opera */
+  backface-visibility: visible;
+}
+
+div#div1 {
+  width:100px;
+  height:100px;
+  background:red;
+  position:relative;
+  border:1px solid #000000;
+  -webkit-animation:mymove 3s infinite;  /* Chrome, Safari, Opera */
+  animation:mymove 3s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+  from {-webkit-transform: rotateY(0deg);}
+  to {-webkit-transform: rotateY(360deg);}
+}
+
+@keyframes mymove {
+  from {transform: rotateY(0deg);}
+  to {transform: rotateY(360deg);}
+}
+
+    </style>
+    <script>
+        
+function checkBackface() {
+  if (document.getElementById("bf").checked == true) {
+    document.getElementById('div1').style.backfaceVisibility = "hidden";
+    document.getElementById('div1').style.webkitBackfaceVisibility = "hidden";
+  } else {
+    document.getElementById('div1').style.backfaceVisibility = "visible";
+    document.getElementById('div1').style.webkitBackfaceVisibility = "visible";
+  }
+}
+// https://www.youtube.com/watch?v=4wdNiHrI1DM
+// https://www.youtube.com/watch?v=SdC0DDdT_rM&t=4s
+
+    </script>
+</head>
+<body>
+    <body>
+
+        <div id="div1" style="backface-visibility: visible;">HELLO</div>
+        <p>Check/uncheck the checkbox to change the backface-visibility of the animated DIV element:</p>
+        <p>Hide the backside:<input id="bf" type="checkbox" onchange="checkBackface()"></p>
+        <p><strong>Note:</strong> The backface-visibility property is not supported in Internet Explorer 9 and earlier versions.</p>
+        
+        
+        </body>
+</body>
+</html>
