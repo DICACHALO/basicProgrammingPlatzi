@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformaciones y transiciones</title>
+    <style>
+        body {
+            margin: 20px;
+            background: -webkit-linear-gradient(260deg, #2e69f5 0%, #e26060 80%);
+            height: 100vh;
+        }
+
+        h2,
+        h1 {
+            color: #fff;
+            font-family: Verdana;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        h2 {
+            font-size: 14px;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-around;
+            border: 0px solid red;
+            margin-block-start: 20px;
+        }
+
+        div {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            transition: transform 500ms;
+        }
+
+        section .shadow {
+            background-color: silver;
+        }
+
+        /*Translate*/
+        section .circle {
+            background: -webkit-linear-gradient(90deg, #e82171 0%, #e1b24c 80%);
+            /* border: 1px solid transparent;*/
+        }
+
+        section .circle:hover {
+            transform: translate(30px, -10px);
+
+        }
+
+        section .circlex {
+            background: -webkit-linear-gradient(90deg, #e82171 0%, #e1b24c 80%);
+            /*border: 1px solid transparent;*/
+        }
+
+        section .circlex:hover {
+            transform: translateX(30px);
+        }
+
+        section .circley {
+            background: -webkit-linear-gradient(90deg, #e82171 0%, #e1b24c 80%);
+            /*border: 1px solid transparent;*/
+        }
+
+        section .circley:hover {
+            transform: translateY(30px);
+        }
+
+        /*-------------SCALE */
+        .circle-scale {
+            background: -webkit-linear-gradient(180deg, #e00b92 0%, #01597e 80%);
+            border: 1px solid transparent;
+        }
+
+        .circle-scale:hover {
+            transform: scale(1.2);
+        }
+
+        .circle-scalex {
+            background: -webkit-linear-gradient(180deg, #e00b92 0%, #01597e 80%);
+            border: 1px solid transparent;
+        }
+
+        .circle-scalex:hover {
+            transform: scaleX(1.2);
+        }
+
+        .circle-scaley {
+            background: -webkit-linear-gradient(180deg, #e00b92 0%, #01597e 80%);
+            border: 1px solid transparent;
+        }
+
+        .circle-scaley:hover {
+            transform: scaley(1.2);
+        }
+
+        /*-----skew-----*/
+        .circle-skew {
+            background: -webkit-linear-gradient(90deg, #b2e00b 0%, #7e017a 80%);
+            border-radius: 20px;
+            border: 1px solid transparent;
+        }
+
+        .circle-skew:hover {
+            transform: skew(50deg);
+        }
+
+        .circle-skewx {
+            background: -webkit-linear-gradient(90deg, #b2e00b 0%, #7e017a 80%);
+            border-radius: 20px;
+            border: 1px solid transparent;
+        }
+
+        .circle-skewx:hover {
+            transform: skewx(50deg);
+        }
+
+        .circle-skewy {
+            background: -webkit-linear-gradient(90deg, #b2e00b 0%, #7e017a 80%);
+            border-radius: 20px;
+            border: 1px solid transparent;
+        }
+
+        .circle-skewy:hover {
+            transform: skewy(50deg);
+        }
+
+        /*------Rotate-----*/
+        .circle-rotate {
+            background: -webkit-linear-gradient(20deg, #00eeff 0%, #f71d74 80%);
+            border-radius: 20px;
+            border: 1px solid transparent;
+        }
+
+        .circle-rotate:hover {
+            transform: rotate(150deg);
+        }
+
+        .circle-rotatex {
+            background: -webkit-linear-gradient(20deg, #00eeff 0%, #f71d74 80%);
+            border-radius: 20px;
+            border: 1px solid transparent;
+        }
+
+        .circle-rotatex:hover {
+            transform: rotateX(150deg);
+        }
+
+        .circle-rotatey {
+            background: -webkit-linear-gradient(20deg, #00eeff 0%, #f71d74 80%);
+            border-radius: 20px;
+            border: 1px solid transparent;
+        }
+
+        .circle-rotatey:hover {
+            transform: rotateY(150deg);
+        }
+
+        /*Rotate origin*/
+        .circle-rotate-o {
+            background: -webkit-linear-gradient(20deg, #00eeff 0%, #f71d74 80%);
+            border-radius: 20px;
+            border: 1px solid transparent;
+            transform-origin: left top;
+        }
+
+        .circle-rotate-o:hover {
+            transform: rotateY(70deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Transformaciones y transiciones</h1>
+    <!-- trnaslate -->
+    <section>
+        <div class="shadow">
+            <div class="circle">
+                <h2>Translate</h2>
+            </div>
+        </div>
+
+        <div class="shadow">
+            <div class="circlex">
+                <h2>TranslateX</h2>
+            </div>
+        </div>
+
+        <div class="shadow">
+            <div class="circley">
+                <h2>TranslateY</h2>
+            </div>
+        </div>
+    </section>
+    <!-- trnaslate fin-->
+
+    <!-- Scale -->
+    <section>
+        <div class="shadow">
+            <div class="circle-scale">
+                <h2>Scale</h2>
+            </div>
+        </div>
+
+        <div class="shadow">
+            <div class="circle-scalex">
+                <h2>ScaleX</h2>
+            </div>
+        </div>
+
+        <div class="shadow">
+            <div class="circle-scaley">
+                <h2>ScaleY</h2>
+            </div>
+    </section>
+    <!-- Scale fin -->
+
+    <!-- Skew -->
+    <section>
+        <div class="shadow">
+            <div class="circle-skew">
+                <h2>Skew</h2>
+            </div>
+        </div>
+
+        <div class="shadow">
+            <div class="circle-skewx">
+                <h2>SkewX</h2>
+            </div>
+        </div>
+
+        <div class="shadow">
+            <div class="circle-skewx">
+                <h2>SkewY</h2>
+            </div>
+        </div>
+    </section>
+    <!-- Skew fin -->
+
+    <!-- Rotate -->
+    <section>
+        <div class="shadow">
+            <div class="circle-rotate">
+                <h2>Rotate</h2>
+            </div>
+        </div>
+
+        <div class="shadow">
+            <div class="circle-rotatex">
+                <h2>RotateX</h2>
+            </div>
+        </div>
+
+        <div class="shadow">
+            <div class="circle-rotatey">
+                <h2>RotateY</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rotate origin-->
+    <section>
+        <div class="circle-rotate-o">
+            <h2>Rotate Origin</h2>
+        </div>
+    </section>
+</body>
+
+</html>
