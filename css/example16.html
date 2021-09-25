@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            background: #cc9696;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container__wrapper {
+            width: 400px;
+            height: 400px;
+            display: grid;
+            grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+            justify-items: center;
+            align-items: center;
+        }
+
+        .circle {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+        }
+
+        .one {
+            background: red;
+            transition: transform 1s ease 1.2s;
+        }
+
+        .two {
+            background: blue;
+            transition: transform .5s linear 1.2s;
+        }
+
+        .three {
+            background: green;
+            transition: transform .8s ease-in 1.2s;
+        }
+
+        .four {
+            background: pink;
+            transition: transform 1.2s ease-out 1.2s;
+        }
+
+        .five {
+            background: orange;
+            transition: transform 1.2s ease-in-out;
+        }
+
+        .six {
+            background: yellow;
+            transition: transform 1.3s linear 1.2s;
+        }
+
+        .seven {
+            background: lightblue;
+            transition: transform 0.6s cubic-bezier(0.32, 0, 0.67, 0) 1.2s;
+
+        }
+
+        .eight {
+            background: purple;
+            transition: transform 0.6s cubic-bezier(0.83, 0, 0.17, 1) 1.2s;
+        }
+
+        .nine {
+            background: brown;
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            transition-delay: 1.2s;
+        }
+
+        .container__wrapper:hover .one {
+            transform: translate(-100px, -100px);
+        }
+
+        .container__wrapper:hover .two {
+            transform: translateY(-100px);
+        }
+
+        .container__wrapper:hover .three {
+            transform: translate(100px, -100px);
+        }
+
+        .container__wrapper:hover .four {
+            transform: translateX(-100px);
+        }
+
+        .container__wrapper:hover .five {
+            transform: scale(2.3);
+        }
+
+        .container__wrapper:hover .six {
+            transform: translate(100px);
+        }
+
+        .container__wrapper:hover .seven {
+            transform: translate(-100px, 100px);
+        }
+
+        .container__wrapper:hover .eight {
+            transform: translateY(100px);
+        }
+
+        .container__wrapper:hover .nine {
+            transform: translate(100px, 100px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container__wrapper">
+            <div class="circle one"></div>
+            <div class="circle two"></div>
+            <div class="circle three"></div>
+            <div class="circle four"></div>
+            <div class="circle five"></div>
+            <div class="circle six"></div>
+            <div class="circle seven"></div>
+            <div class="circle eight"></div>
+            <div class="circle nine"></div>
+        </div>
+    </div>
+</body>
+
+</html>

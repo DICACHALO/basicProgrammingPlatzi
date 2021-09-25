@@ -7,42 +7,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transition</title>
     <style>
+
+        .container{
+            background-color: #F4D03F;
+            padding: 10px;
+            width: 500px;
+        }
         .container:hover .circle {
             transform: translateX(400px);
+
+        }
+
+        .circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 2px solid #6f4719;
+            box-shadow:5px 5px 5px grey;
+            margin: 8px;
+        }
+
+        .circle p {
+            color: #BA4A00;
+            font-size: small;
+            font-weight: bolder;
+            text-align: center;
             
         }
-        .circle{
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            margin: 12px;
-        }
-        .one{
+
+        .one {
             background: fuchsia;
             transition: transform 1s linear;
             transition-delay: 0.5s;
         }
-        .two{
+
+        .two {
             background: orchid;
             transition: transform 1s ease;
             transition-delay: 1s;
         }
-        .three{
+
+        .three {
             background: violet;
             transition: transform 1.5s ease-in;
             transition-delay: 1.5s;
         }
-        .four{
+
+        .four {
             background: plum;
             transition: transform 2s ease-out;
             transition-delay: 2s;
         }
-        .five{
+
+        .five {
             background: thistle;
             transition: transform 1s ease-in-out;
             transition-delay: 2.5s;
         }
-        .six{
+
+        .six {
             background: lavender;
             transition: transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
             transition-delay: 3s;
@@ -52,12 +75,24 @@
 
 <body>
     <div class="container">
-        <div class="circle one"></div>
-        <div class="circle two"></div>
-        <div class="circle three"></div>
-        <div class="circle four"></div>
-        <div class="circle five"></div>
-        <div class="circle six"></div>
+        <div class="circle one">
+            <p>linear</p>
+        </div>
+        <div class="circle two">
+            <p>ease</p>
+        </div>
+        <div class="circle three">
+            <p>ease-in</p>
+        </div>
+        <div class="circle four">
+            <p>ease-out</p>
+        </div>
+        <div class="circle five">
+            <p>ease-in-out</p>
+        </div>
+        <div class="circle six">
+            <p>cubic-bezier</p>
+        </div>
     </div>
 </body>
 
