@@ -18,6 +18,7 @@ function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal)
 
 function dibujoPorClick()
 {
+  lienzo.clearRect(0,0,300,300); // Limpia el lienzo para volver a dibujar
   var lineas = parseInt(texto.value); //Lineas es igual al valor que hay en la caja de texto proporcionado por el usuario, que se ha convertido en entero por parseInt
   var l = 0;
   var yi, xf;

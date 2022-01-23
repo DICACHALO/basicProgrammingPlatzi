@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=“utf-8”>
+  <title>Primer dibujo con canvas</title>
+  <style type=“text/css”>
+    body {
+      background-color: black;
+      font-family: Helvetica;
+      color: azure;
+    }
+  </style>
+</head>
+
+<body>
+  <h1> Dibujo en un triangulo en la cordenada deseada</h1>
+  <canvas id="canvas" width="300" height="300"></canvas>
+
+  <br> Primer punto <br> X: <input type="text" id = "texto_punto1x"/> Y: <input type = "text" id = "texto_punto1y"/>
+  <br> Segundo punto <br> X: <input type="text" id = "texto_punto2x"/> Y: <input type = "text" id = "texto_punto2y"/>
+  <br> Tercer punto <br> X: <input type="text" id = "texto_punto3x"/> Y: <input type = "text" id = "texto_punto3y"/>
+
+
+  <br> <input type="button" value= "OK!!!" id = "botoncito"/>
+  <p> <br> Favor de colocar las coordenadas del triangulo <br>
+  la medida maxima es de <strong> 300 pixeles x 300 pixeles el area editatble</strong>.</p>
+
+  <script src='dibujo.js'></script>
+</body>
+
+</html>

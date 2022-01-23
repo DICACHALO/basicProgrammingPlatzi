@@ -13,7 +13,7 @@ while(l<lineas){
 	dibujarLinea("#AAF", 0, yi,xf,300); //Solo dos se van a ir moviendo
 	dibujarLinea("#AAF", 300, yi,xf,0); //Con esta línea me ahorro hacer otro while como el de abajo
   console.log("Linea " + l); //Para revisar qué está pasando con l en consola
-	l=l+1;
+	l=l+1; // También se puede con l++
 }
 
 /*Haciendo un dibujo contrario

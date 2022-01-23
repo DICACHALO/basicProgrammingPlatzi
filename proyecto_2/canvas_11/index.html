@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Dibujo libre con canvas</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <h1>DIBUJO LIBRE</h1>
+  <p>
+    Para crear tu obra de arte, haz lo siguiente:
+  <ol>
+    <li>Escribe o selecciona el número de lineas que quieres dibujar.</li>
+    <li>selecciona el número que corresponda al color que deseas.</li>
+    <li>Haz click en el boton "Dibujar".</li>
+    <li>Repite el proceso cuantas veces quieras, jugando con la cantidad de lineas y colores.</li>
+    <li>El boton "Borrar todo", dejara tu hoja totalmente limpia.</li>
+  </ol>
+  </p>
+  <script>
+    document.write("______1. amarillo___2. azul___3. rojo___4. morado___5. aguamarina___6. violeta___7. naranja___8. fucsia ");
+  </script> <br><br><br>
+  <script>
+    document.write("Superior izquierdo . . . . Superior derecho . . . . Inferior izquierdo . . . . . Inferior derecho . . . . . . . . . .Elige el color");
+  </script> <br>
+  <input type="number" id="supe_izq" />
+  <input type="number" id="supe_der" />
+  <input type="number" id="infe_izq" />
+  <input type="number" id="infe_der" />
+  . . . . . . . . . . . . . <input type="number" id="todos_colores" /> <br><br><br>
+  <script>
+    document.write("Centro izquierdo . . . . . . . Centro derecho . . . . .Centro superior  . . . . . . Centro inferior");
+  </script>
+  <input type="button" value="Dibujar " id="botoncito" />
+  <input type="button" value="Borrar todo" id="boton_borrar" /> <br>
+  <input type="number" id="centro_izq" />
+  <input type="number" id="centro_der" />
+  <input type="number" id="centro_mediosup" />
+  <input type="number" id="centro_medioinf" />
+  <h2> Aqui esta tu obra de arte: </h2>
+  <canvas> </canvas>
+  <canvas width="500" height="500" id="imagen_grande"> </canvas>
+
+  <script src="./index.js"> </script>
+  </p>
+</body>
+
+</html>

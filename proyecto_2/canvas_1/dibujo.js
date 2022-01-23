@@ -14,3 +14,4 @@ console.log(lienzo);
   lienzo.lineTo(200, 200); //función de trazar una línea
   lienzo.stroke(); //Dibujar con el estilo que se ha decidido
   lienzo.closePath(); //Cerrar el camino o trazo y levantar nuevamente el lápiz. No se le pasa ningún parámetro. Sólo se le indica que debe arrancar
+
