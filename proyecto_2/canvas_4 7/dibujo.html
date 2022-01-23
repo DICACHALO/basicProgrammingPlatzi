@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset=“utf-8”>
+	<title>Primer dibujo con canvas</title>
+</head>
+
+<body>
+	<h1>Dibujo en canvas</h1>
+	<p>
+		Cuántas líneas quieres?
+
+		<input type="text" id="texto_lineas" /><br />
+
+		Cuál figura deseas:
+	<div>
+		<input type="radio" id="figura1" name="seleccionFigura" value="1" />
+		<label for="figura1">Figura 1</label>
+	</div>
+
+	<div>
+		<input type="radio" id="figura2" name="seleccionFigura" value="2" />
+		<label for="figura2">Figura 2</label>
+	</div>
+	<br />
+
+	<input type="button" value="A darle!" id="botoncito" />
+
+	</p>
+
+	<canvas width="300" height="300" id="dibujito"></canvas>
+	<script src='dibujo.js'></script>
+</body>
+
+</html>

@@ -6,18 +6,15 @@
   </head>
   <body>
     <h1>Tu peso en otro planeta</h1>
-    <p>En la tierra pesas distinto que en Marte o Jupiter</p>
+    <p>En la tierra pesas distinto que en Marte o Jupiter.</p>
     <script>
-    var g_tierra = 9.8;
-    var g_marte = 3.7;
-    var g_jupiter = 24.8;
-    var peso = 77;
+    var g_tierra = 9.8; //Gravedad del planeta Tierra
+    var g_marte = 3.7; //Gravedad del planeta Marte
+    var peso = 77; //Valor asumido por defecto
     var peso_final; //Variable en la que se guarda el resultado
     peso_final = peso * g_marte / g_tierra; //Fórmula que sale de una regla de tres
     peso_final = parseInt(peso_final); //Convertir a entero, también sirve para convertir una cadena de texto a número
-    document.write(peso_final) //Escritura en JavaScript
-
+    document.write("Pesas: " + peso_final + " kg si tienes " + g_tierra + " kg en la tierra.") //Escritura en JavaScript
     </script>
-
   </body>
 </html>
