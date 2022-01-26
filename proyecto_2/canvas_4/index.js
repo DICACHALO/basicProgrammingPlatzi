@@ -1,8 +1,8 @@
-var texto = document.getElementById("texto_lineas");
-var boton = document.getElementById("botoncito");
+var texto = document.getElementById("myText");
+var boton = document.getElementById("myButton");
 boton.addEventListener("click", dibujoPorClick ); //Manejador de eventos
 
-var d = document.getElementById("dibujito");
+var d = document.getElementById("myDrawing");
 var ancho = d.width;
 var lienzo = d.getContext("2d");
 
@@ -22,17 +22,17 @@ function dibujoPorClick()
   var lineas = parseInt(texto.value); //Lineas es igual al valor que hay en la caja de texto proporcionado por el usuario, que se ha convertido en entero por parseInt
   var l = 0;
   var yi, xf;
-  var colorcito = "#FAA";
+  var myColor = "#FAA";
   var espacio = ancho / lineas;
 
   for(l = 0; l < lineas; l++)
   {
     yi = espacio * l;
     xf = espacio * (l + 1);
-    dibujarLinea(colorcito, 0, yi, xf, 300);
+    dibujarLinea(myColor, 0, yi, xf, 300);
     console.log("Linea " + l);
   }
 
-  dibujarLinea(colorcito, 1,1,1,ancho-1);
-  dibujarLinea(colorcito, 1,299,299,299);
+  dibujarLinea(myColor, 1,1,1,ancho-1);
+  dibujarLinea(myColor, 1,299,299,299);
 }
