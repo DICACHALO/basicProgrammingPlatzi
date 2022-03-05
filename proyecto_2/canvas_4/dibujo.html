@@ -8,27 +8,26 @@
 
   <body>
     <section>
-        <div class="title">
-          <h1>Dibujo en canvas</h1>
-        </div>
-        <div class="container">
-          <p>¿Cuantas lineas quieres?</p>
-          <input
-            type="text"
-            id="myText"
-            class="text"
-            placeholder="Ingrese la cantidad de lineas deseada"
-          />
-          <input
-            type="button"
-            value="¡Dibujar!"
-            id="myButton"
-            class="btn"
-          />
-          <p>Asi queda tu dibujo:</p>
-        </div>
-        <canvas width="300" height="300" id="myDrawing"></canvas>
-     
+      <div class="title">
+        <h1>Dibujo en canvas</h1>
+      </div>
+      <div class="container">
+        <p class="text">¿Cuantas lineas quieres?</p>
+        <input
+          type="text"
+          id="myText"
+          class="text"
+          placeholder="Ingrese la cantidad de lineas deseada"
+        />
+        <p class="text">
+          Escoge un color para tu imagen
+          <input id="txtColor" class="inputBox" type="color" />
+        </p>
+
+        <input type="button" value="¡Dibujar!" id="myButton" class="btn" />
+        <p class="text">Asi queda tu dibujo:</p>
+      </div>
+      <canvas width="300" height="300" id="myDrawing"></canvas>
     </section>
     <script src="index.js"></script>
   </body>

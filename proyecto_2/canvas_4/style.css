@@ -3,7 +3,7 @@
   }
 
   section{
-    height: 90vh;
+    height: 80vh;
     display: grid;
     grid-template-columns: minmax(auto, 400px);
     justify-content: center;
@@ -11,7 +11,7 @@
 
   .title{
     background-color: #263f4e;
-    padding: 5px;
+    padding: 2px;
     color: #fff;
     font-family: 'Lato', sans-serif;
     border-radius: 5px 5px 0 0;
@@ -22,7 +22,7 @@
   .container{
     width: 100%;
     justify-self: center;
-    padding: 10px;
+    padding: 8px;
     border: 1px solid #88d4ff;
     background-color: #f3f8fb;
   }
@@ -67,4 +67,25 @@
     margin-top: 7px;
     background-color: #608327;
     border: none;
+  }
+
+  input[type=color]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+  }
+
+  input[type=color]::-webkit-color-swatch{
+    border-radius: 50%;
+    border: 1px solid #000;
+  }
+
+  input[type=color]::-moz-color-swatch{
+    border-radius: 50%;
+    border: 1px solid #000;
   }

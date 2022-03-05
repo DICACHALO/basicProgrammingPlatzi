@@ -3,6 +3,8 @@ let boton = document.getElementById("myButton");
 let d = document.getElementById("myDrawing");
 let ancho = d.width;
 let lienzo = d.getContext("2d");
+let txtColorObject = document.getElementById("txtColor");
+let desiredColor = txtColorObject.value;
 
 function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal)
 {
@@ -20,7 +22,7 @@ function dibujoPorClick()
   let lineas = parseInt(texto.value); //Lineas es igual al valor que hay en la caja de texto proporcionado por el usuario, que se ha convertido en entero por parseInt
   let l = 0;
   let yi, xf;
-  let myColor = "#88d4ff";
+  let myColor = desiredColor;
   let espacio = ancho / lineas;
 
   for(l = 0; l < lineas; l++)
@@ -28,7 +30,6 @@ function dibujoPorClick()
     yi = espacio * l;
     xf = espacio * (l + 1);
     dibujarLinea(myColor, 0, yi, xf, 300);
-    console.log("Linea " + l);
   }
 
   dibujarLinea(myColor, 1,1,1,ancho-1);

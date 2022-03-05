@@ -1,9 +1,9 @@
-var texto = document.getElementById("texto_lineas");
-var boton = document.getElementById("botoncito");
+let texto = document.getElementById("texto_lineas");
+let boton = document.getElementById("botoncito");
 boton.addEventListener("click", dibujarporclick);
 
-var d = document.getElementById("dibujito");
-var lienzo = d.getContext("2d");
+let d = document.getElementById("dibujito");
+let lienzo = d.getContext("2d");
 
 function dibujarLinea(rot)
 {
@@ -16,7 +16,7 @@ function dibujarLinea(rot)
 
 function dibujarporclick()
 {
-  var orb = parseInt(texto.value);
+  let orb = parseInt(texto.value);
   for (rot = 0; rot <= Math.PI; rot = rot + (Math.PI / orb))
   {
     dibujarLinea(rot);
