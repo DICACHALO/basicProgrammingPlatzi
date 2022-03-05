@@ -1,13 +1,14 @@
-let texto = document.getElementById("myText");
-let boton = document.getElementById("myButton");
+let textUser = document.getElementById("myText");
+let btnShowObject = document.getElementById("btnShow");
+let btnClearObject = document.getElementById("btnClear");
 let d = document.getElementById("myDrawing");
 let ancho = d.width;
 let lienzo = d.getContext("2d");
 let txtColorObject = document.getElementById("txtColor");
 let desiredColor = txtColorObject.value;
+let radSquareObject = document.getElementById("radSquare");
 
-function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal)
-{
+function drawLine(color, xinicial, yinicial, xfinal, yfinal) {
   lienzo.beginPath();
   lienzo.strokeStyle = color;
   lienzo.moveTo(xinicial, yinicial);
@@ -16,24 +17,41 @@ function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal)
   lienzo.closePath();
 }
 
-function dibujoPorClick()
-{
-  lienzo.clearRect(0,0,300,300); // Limpia el lienzo para volver a dibujar
-  let lineas = parseInt(texto.value); //Lineas es igual al valor que hay en la caja de texto proporcionado por el usuario, que se ha convertido en entero por parseInt
+function drawCanvasDesign() {
+  let lineas = parseInt(textUser.value);
   let l = 0;
   let yi, xf;
   let myColor = desiredColor;
   let espacio = ancho / lineas;
 
-  for(l = 0; l < lineas; l++)
-  {
-    yi = espacio * l;
-    xf = espacio * (l + 1);
-    dibujarLinea(myColor, 0, yi, xf, 300);
-  }
+  if (radSquareObject.checked == true) {
+    for (l = 0; l < lineas; l++) {
+      yi = espacio * l;
+      xf = espacio * (l + 1);
+      drawLine(myColor, 0, yi, xf, 300);
+    }
 
-  dibujarLinea(myColor, 1,1,1,ancho-1);
-  dibujarLinea(myColor, 1,299,299,299);
+    drawLine(myColor, 1, 1, 1, ancho - 1);
+    drawLine(myColor, 1, 299, 299, 299);
+  } else {
+    let orb = parseInt(textUser.value);
+    for (rot = 0; rot <= Math.PI; rot = rot + Math.PI / orb) {
+      drawStar(rot);
+    }
+  }
 }
 
-boton.addEventListener("click", dibujoPorClick ); //Manejador de eventos
+function drawStar(rot) {
+  lienzo.beginPath();
+  lienzo.strokeStyle = desiredColor;
+  lienzo.ellipse(150, 150, 20, 85, rot, 0, 2 * Math.PI);
+  lienzo.stroke();
+  lienzo.closePath();
+}
+
+function clearMyCanvas() {
+  lienzo.clearRect(0, 0, 300, 300); // Limpia el lienzo para volver a dibujar
+}
+
+btnShowObject.addEventListener("click", drawCanvasDesign); //Manejador de eventos
+btnClearObject.addEventListener("click", clearMyCanvas);

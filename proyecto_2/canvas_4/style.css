@@ -25,6 +25,7 @@
     padding: 8px;
     border: 1px solid #88d4ff;
     background-color: #f3f8fb;
+    
   }
   
   canvas{
@@ -41,17 +42,19 @@
     border: none;
     border-radius: 5px;
     border: 1px solid #88d4ff;
+    
   }
 
   .btn{
-    width: 100%;
-    margin: 5px 0;
-    display: inline-block;
+    width: 45%;
+    margin-left: 6px;
+    margin-right: 9px;
+    display: table-row;
     border: none;
     color: #fff;
     cursor: pointer;
     outline: 0;
-    padding: 5px 10px;
+    padding: 5px 5px;
     font-weight: bold;
     background-color: #95ca3e;
     font-family: 'Lato', sans-serif;

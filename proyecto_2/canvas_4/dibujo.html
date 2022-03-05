@@ -21,11 +21,13 @@
         />
         <p class="text">
           Escoge un color para tu imagen
-          <input id="txtColor" class="inputBox" type="color" />
+          <input id="txtColor" type="color" />
         </p>
-
-        <input type="button" value="¡Dibujar!" id="myButton" class="btn" />
-        <p class="text">Asi queda tu dibujo:</p>
+        <p class="text">Escoge tu dibujo:
+          <input id="radSquare" type="radio" name="pattern" value="Square">Cuadrados
+          <input id="radStar"  type="radio" name="pattern" value="Star">Estrella</p>
+        <input type="button" value="¡Dibujar!" id="btnShow" class="btn" />
+        <input type="button" value="Limpiar" id="btnClear" class="btn" />
       </div>
       <canvas width="300" height="300" id="myDrawing"></canvas>
     </section>
