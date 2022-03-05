@@ -6,10 +6,10 @@ var teclas = {
 }; //Objeto literal
 
 document.addEventListener("keydown", dibujarTeclado);
-var cuadrito = document.getElementById("area_de_dibujo");
-var papel = cuadrito.getContext("2d");
-var x = 150;
-var y = 150;
+let cuadrito = document.getElementById("area_de_dibujo");
+let papel = cuadrito.getContext("2d");
+let x = 150;
+let y = 150;
 
 dibujarLinea("red", x-1, y-1, x+1, y+1, papel);
 
@@ -27,8 +27,8 @@ function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal, lienzo)
 
 function dibujarTeclado(evento)
 {
-  var colorcito = "#FAA";
-  var movimiento = 5; //Cantidad de pixeles
+  let colorcito = "#FAA";
+  let movimiento = 5; //Cantidad de pixeles
   switch(evento.keyCode)
   {
     case teclas.UP:

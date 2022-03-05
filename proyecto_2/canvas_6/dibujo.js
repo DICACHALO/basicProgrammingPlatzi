@@ -1,5 +1,5 @@
-var d = document.getElementById('lobo');
-var lienzo = d.getContext('2d');
+let d = document.getElementById('lobo');
+let lienzo = d.getContext('2d');
 
 dibujarLinea("#F8F8FF", 560, 140, 548, 133);
 dibujarLinea("#F8F8FF", 548, 133, 520, 120);

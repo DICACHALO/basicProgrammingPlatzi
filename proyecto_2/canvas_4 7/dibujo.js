@@ -1,10 +1,10 @@
-var texto = document.getElementById("texto_lineas");
-var boton = document.getElementById("botoncito");
-var d = document.getElementById("dibujito"); //Método para obtener un elemento del documento por su ID
-var lienzo = d.getContext("2d"); //Método del canvas para definir el escenario 2d o 3d
-var ancho = d.width;
-var ancho2 = (d.width) / 2;
-var gradiente;
+let texto = document.getElementById("texto_lineas");
+let boton = document.getElementById("botoncito");
+let d = document.getElementById("dibujito"); //Método para obtener un elemento del documento por su ID
+let lienzo = d.getContext("2d"); //Método del canvas para definir el escenario 2d o 3d
+let ancho = d.width;
+let ancho2 = (d.width) / 2;
+let gradiente;
 
 boton.addEventListener("click", dibujoPorClick);
 
@@ -37,13 +37,13 @@ function dibujarLineaMarco(xinicial, yinicial, xfinal, yfinal) {
 
 function dibujoPorClick() {
 
-	var lineas = parseInt(texto.value);
-	var l;
-	var n = 1;
-	var yi, xf, xi, yf;
-	var colorcito;
-	var espacio = ancho / lineas;
-	var espacio2 = ancho2 / lineas;
+	let lineas = parseInt(texto.value);
+	let l;
+	let n = 1;
+	let yi, xf, xi, yf;
+	let colorcito;
+	let espacio = ancho / lineas;
+	let espacio2 = ancho2 / lineas;
 
 	d.width = d.width
 	dibujarLineaMarco(1, 1, ancho - 1, ancho - 1);

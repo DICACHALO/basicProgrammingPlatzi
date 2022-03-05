@@ -1,6 +1,6 @@
-var box = document.getElementById('myCanvas');
-var lienzo = box.getContext('2d');
-var green = '#64dd17';
+let box = document.getElementById('myCanvas');
+let lienzo = box.getContext('2d');
+let green = '#64dd17';
 
 function drawPlatzi(color, stroke){
 	lienzo.beginPath();
