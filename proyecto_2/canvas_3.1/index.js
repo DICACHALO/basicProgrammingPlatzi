@@ -1,9 +1,8 @@
-//Creando una función
-var d = document.getElementById("myDrawing"); 
-var lienzo = d.getContext("2d"); 
-var lineas = 30; 
-var l = 0; 
-var yi, xf; 
+let d = document.getElementById("myDrawing"); 
+let lienzo = d.getContext("2d"); 
+let lineas = 30; 
+let l = 0; 
+let  yi, xf; 
 
 // Puedo hacer las dos partes en un solo while
 while(l<lineas){

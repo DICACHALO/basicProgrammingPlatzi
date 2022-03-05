@@ -1,10 +1,10 @@
 //Creando una función
-var d = document.getElementById("myDrawing");
-var lienzo = d.getContext("2d");
-var lineas = 30; //Este es el límite de líneas que vamos a hacer
-var l = 0; //Esta variable contará las líneas - VARIABLE ITERADORA
-var l2 = 0;
-var yi, xf; //Variables vacias que vamos a usar en el ciclo, son las que cambian en cada iteración
+let d = document.getElementById("myDrawing");
+let lienzo = d.getContext("2d");
+let lineas = 30; //Este es el límite de líneas que vamos a hacer
+let l = 0; //Esta variable contará las líneas - VARIABLE ITERADORA
+let l2 = 0;
+let yi, xf; //Variables vacias que vamos a usar en el ciclo, son las que cambian en cada iteración
 
 
 while (l < lineas) {

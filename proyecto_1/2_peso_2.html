@@ -7,12 +7,12 @@
     <h1>Tu peso en otro planeta</h1>
     <p>En la tierra pesas distinto que en Marte o Jupiter.</p>
     <script>
-    var usuario = prompt("¿Cual es tu peso?"); // parecido a un alert para interactuar con el usuario
-    var peso = parseFloat(usuario); //capturo respuesta del usuario
+    let usuario = prompt("¿Cual es tu peso?"); // parecido a un alert para interactuar con el usuario
+    let peso = parseFloat(usuario); //capturo respuesta del usuario
     // Si se quiere usar como decimal usamos parseFloat
     const g_tierra = 9.8; // Const permite declarar variables inmutables, es decir, que no se pueden cambiar.
     const g_marte = 3.7;
-    var peso_final;
+    let peso_final;
     peso_final = peso * g_marte / g_tierra;
     peso_final = parseFloat(peso_final); //Primero ocurre lo de la derecha de la asignación
     document.write("Tu peso en marte es <strong>" + peso_final + " kilos</strong>.");

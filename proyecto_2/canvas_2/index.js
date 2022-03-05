@@ -1,6 +1,6 @@
 //Creando una función
-var d = document.getElementById("myDrawing"); 
-var lienzo = d.getContext("2d"); 
+let d = document.getElementById("myDrawing"); 
+let lienzo = d.getContext("2d"); 
 
 //Las funciones siempre se leen primero en JavaScript no importa el lugar en que se ubiquen
 

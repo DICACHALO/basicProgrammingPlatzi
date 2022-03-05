@@ -7,14 +7,14 @@
     <h1>Tu peso en otro planeta</h1>
     <p>En la tierra pesas distinto que en Marte o Jupiter.</p>
     <script type="application/javascript">
-    var usuario = prompt("Cual es tu peso?");
-    var planeta = parseFloat(prompt("Elige tu planeta\n1 es marte, 2 es jupiter"));
-    var peso = parseFloat(usuario).toFixed(2); // Con toFixed limitamos el número de decimales
+    let usuario = prompt("Cual es tu peso?");
+    let planeta = parseFloat(prompt("Elige tu planeta\n1 es marte, 2 es jupiter"));
+    let peso = parseFloat(usuario).toFixed(2); // Con toFixed limitamos el número de decimales
     const g_tierra = 9.8;
     const g_marte = 3.7;
     const g_jupiter = 24.8; //Gravedad de Júpiter
-    var peso_final;
-    var nombre = ""; //Cadena de texto vacía
+    let peso_final;
+    let nombre = ""; //Cadena de texto vacía
     if (planeta == 1)
     {
         peso_final = ((peso * g_marte) / g_tierra);

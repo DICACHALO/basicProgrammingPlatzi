@@ -3,42 +3,38 @@
   }
 
   section{
-    height: 100vh;
+    height: 90vh;
     display: grid;
     grid-template-columns: minmax(auto, 400px);
-    
     justify-content: center;
-  }
-  .d-grid{
-    /* margin: 150px; */
-    display: grid;
-    grid-template: auto 100px auto / 1fr;
-    justify-content: center;
-    align-content: center;
   }
 
-  .img-container{
+  .title{
+    background-color: #263f4e;
+    padding: 5px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
     border-radius: 5px 5px 0 0;
     display: flex;
     justify-content: center;
   }
 
   .container{
-    /* width: 300px; */
     width: 100%;
     justify-self: center;
     padding: 10px;
-    border: 1px solid #f3f8fb;
-    /* border-radius: 10px; */
+    border: 1px solid #88d4ff;
     background-color: #f3f8fb;
   }
+  
   canvas{
     width: 100%;
     height: 50vh;
     border-radius: 0 0 5px 5px;
     border: 1px solid #88d4ff;
   }
-  .texto{
+  
+  .text{
     width: 100%;
     margin: 5px 0;
     padding: 5px;
@@ -46,13 +42,8 @@
     border-radius: 5px;
     border: 1px solid #88d4ff;
   }
-  .bg-platzi{
-    background-color: #263f4e;
-    padding: 5px;
-    color: #fff;
-    font-family: 'Lato', sans-serif;
-  }
-  .btn-platzi{
+
+  .btn{
     width: 100%;
     margin: 5px 0;
     display: inline-block;
@@ -67,11 +58,12 @@
     border-radius: 5px;
     border-bottom: 2px solid #669840;
   }
-  .btn-platzi:hover{
+
+  .btn:hover{
     background-color: #a6d160;
   }
   
-  .btn-platzi:active{
+  .btn:active{
     margin-top: 7px;
     background-color: #608327;
     border: none;

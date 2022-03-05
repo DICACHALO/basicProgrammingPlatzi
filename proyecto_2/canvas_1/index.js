@@ -1,8 +1,8 @@
 // getElementById: Obtener el elemento por su Id
 // getElementById es un método del documento que trae un elemento a través de su ID
-var d = document.getElementById("myDrawing"); /*Canvas es una etiqueta y su id es myDrawing. 
+let d = document.getElementById("myDrawing"); /*Canvas es una etiqueta y su id es myDrawing. 
     A d se le asignó lo que en el id myDrawing había, myDrawing es el parámetro.*/
-var lienzo = d.getContext("2d"); /*Área dónde se va a pintar, del canvas se obtiene el lienzo. 
+let lienzo = d.getContext("2d"); /*Área dónde se va a pintar, del canvas se obtiene el lienzo. 
     getContext es un método del canvas que me permite obtener el área dónde voy a dibujar. 
     Está ilustrado por la variable d que trajimos por myDrawing, y trajimos el contexto 2d (también existe el contexto 3d)*/
 console.log(lienzo);
